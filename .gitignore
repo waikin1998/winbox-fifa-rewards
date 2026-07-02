@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.tools/
+.DS_Store
+npm-debug.log*
+app/globals 2.css
+app/page 2.tsx
+public/campaign/benefit-icons-*.png
+public/campaign/football-trophy-hero.png
+public/campaign/welcome-gift.png
