@@ -19,9 +19,6 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '2447773679071981');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2447773679071981&ev=PageView&noscript=1"
-/></noscript>
 <!-- End Meta Pixel Code -->
   <link rel="stylesheet" href="./app/globals.css?v=6" />
   <style>
@@ -46,7 +43,7 @@ src="https://www.facebook.com/tr?id=2447773679071981&ev=PageView&noscript=1"
         <h1>WINBOX <b>×</b> FIFA</h1>
         <p class="hero-kicker">老虎欢迎新奖金</p>
         <p class="hero-offer">参与最高可获得 <strong>MYR 5,888</strong></p>
-        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="primary-cta"><span class="primary-cta-copy"><strong>立即参加</strong><small>JOIN NOW</small></span></a>
+        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="primary-cta" onclick="fbq('track','CompleteRegistration');"><span class="primary-cta-copy"><strong>立即参加</strong><small>JOIN NOW</small></span></a>
         <a href="#reward" class="scroll-cue"><span>往下滑查看你的奖励</span><i>⌄</i></a>
       </div>
     </section>
@@ -97,23 +94,23 @@ src="https://www.facebook.com/tr?id=2447773679071981&ev=PageView&noscript=1"
 
       <article class="tier-card tier-1">
         <img src="./public/campaign/reward-1.png" alt="奖金 1：MYR 100 获得 118" class="tier-artwork" />
-        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="tier-action" aria-label="奖金 1，立即通过 WhatsApp 参加"><strong>立即参加</strong><small>JOIN NOW</small></a>
+        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="tier-action" aria-label="奖金 1，立即通过 WhatsApp 参加" onclick="fbq('track','CompleteRegistration');"><strong>立即参加</strong><small>JOIN NOW</small></a>
       </article>
       <article class="tier-card tier-2">
         <img src="./public/campaign/reward-2.png" alt="奖金 2：MYR 500 获得 588" class="tier-artwork" />
-        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="tier-action" aria-label="奖金 2，立即通过 WhatsApp 参加"><strong>立即参加</strong><small>JOIN NOW</small></a>
+        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="tier-action" aria-label="奖金 2，立即通过 WhatsApp 参加" onclick="fbq('track','CompleteRegistration');"><strong>立即参加</strong><small>JOIN NOW</small></a>
       </article>
       <article class="tier-card tier-3">
         <img src="./public/campaign/reward-3.png" alt="奖金 3：MYR 1,000 获得 1,188" class="tier-artwork" />
-        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="tier-action" aria-label="奖金 3，立即通过 WhatsApp 参加"><strong>立即参加</strong><small>JOIN NOW</small></a>
+        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="tier-action" aria-label="奖金 3，立即通过 WhatsApp 参加" onclick="fbq('track','CompleteRegistration');"><strong>立即参加</strong><small>JOIN NOW</small></a>
       </article>
       <article class="tier-card tier-4">
         <img src="./public/campaign/reward-4.png" alt="奖金 4：MYR 3,000 获得 3,558" class="tier-artwork" />
-        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="tier-action" aria-label="奖金 4，立即通过 WhatsApp 参加"><strong>立即参加</strong><small>JOIN NOW</small></a>
+        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="tier-action" aria-label="奖金 4，立即通过 WhatsApp 参加" onclick="fbq('track','CompleteRegistration');"><strong>立即参加</strong><small>JOIN NOW</small></a>
       </article>
       <article class="tier-card tier-5">
         <img src="./public/campaign/reward-5.png" alt="奖金 5：MYR 5,000 获得 5,888" class="tier-artwork" />
-        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="tier-action" aria-label="奖金 5，立即通过 WhatsApp 参加"><strong>立即参加</strong><small>JOIN NOW</small></a>
+        <a href="https://wa.me/601125462681" target="_blank" rel="noreferrer" class="tier-action" aria-label="奖金 5，立即通过 WhatsApp 参加" onclick="fbq('track','CompleteRegistration');"><strong>立即参加</strong><small>JOIN NOW</small></a>
       </article>
     </section>
 
@@ -122,13 +119,5 @@ src="https://www.facebook.com/tr?id=2447773679071981&ev=PageView&noscript=1"
       <p>© 2026 WINBOX · 请理性参与活动</p>
     </footer>
   </main>
-  <script>
-    document.addEventListener('click',function(event){
-      var cta=event.target.closest('.primary-cta,.tier-action');
-      if(cta&&typeof fbq==='function'){
-        fbq('track','CompleteRegistration');
-      }
-    });
-  </script>
 </body>
 </html>
