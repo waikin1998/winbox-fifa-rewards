@@ -6,12 +6,28 @@
   <meta name="theme-color" content="#03283d" />
   <meta name="description" content="WINBOX x FIFA 迎新活动奖励，参与最高可获得 MYR 5,888。" />
   <title>WINBOX x FIFA 活动奖励</title>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','2447773679071981');
+    fbq('track','PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
   <link rel="stylesheet" href="./app/globals.css?v=6" />
   <style>
     .hero-image,.tier-artwork{position:absolute;inset:0;width:100%;height:100%}
   </style>
 </head>
 <body>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+    src="https://www.facebook.com/tr?id=2447773679071981&amp;ev=PageView&amp;noscript=1" /></noscript>
   <main class="campaign-shell">
     <header class="topbar">
       <a href="#top" class="brand" aria-label="WINBOX 首页">
@@ -103,5 +119,13 @@
       <p>© 2026 WINBOX · 请理性参与活动</p>
     </footer>
   </main>
+  <script>
+    document.addEventListener('click',function(event){
+      var cta=event.target.closest('.primary-cta,.tier-action');
+      if(cta&&typeof fbq==='function'){
+        fbq('track','CompleteRegistration');
+      }
+    });
+  </script>
 </body>
 </html>
