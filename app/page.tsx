@@ -45,7 +45,7 @@ export default function Home() {
           <h1>WINBOX <b>×</b> FIFA</h1>
           <p className="hero-kicker">老虎欢迎新奖金</p>
           <p className="hero-offer">参与最高可获得 <strong>MYR 5,888</strong></p>
-          <a href="https://wa.link/nzfbfz" target="_blank" rel="noreferrer" className="primary-cta" data-meta-cta="Hero CTA">
+          <a href="https://t.me/winbox5com" target="_blank" rel="noreferrer" className="primary-cta" data-meta-cta="Hero CTA">
             <span className="primary-cta-copy"><strong>立即参加</strong><small>JOIN NOW</small></span>
           </a>
           <a href="#reward" className="scroll-cue"><span>往下滑查看你的奖励</span><i>⌄</i></a>
@@ -82,12 +82,12 @@ export default function Home() {
               className="tier-artwork"
             />
             <a
-              href="https://wa.link/nzfbfz"
+              href="https://t.me/winbox5com"
               target="_blank"
               rel="noreferrer"
               className="tier-action"
               data-meta-cta={`Reward ${index + 1} CTA`}
-              aria-label={`奖金 ${index + 1}，立即通过 WhatsApp 参加`}
+              aria-label={`奖金 ${index + 1}，立即通过 Telegram 参加`}
             >
               <strong>立即参加</strong>
               <small>JOIN NOW</small>
